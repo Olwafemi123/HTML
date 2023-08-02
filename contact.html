@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website | Contact Us</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="employment">Employment Status:</label>
+            <select id="employment" name="employment" required>
+              <option value="" disabled selected>Select Option</option>
+              <option value="Student">Student</option>
+              <option value="Employed Full-time">Employed Full-time</option>
+              <option value="Employed Part-time">Employed Part-time</option>
+              <option value="Retired">Retired</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>How did you hear about our site?</legend>
+          <div class="form-group">
+            <label><input type="radio" name="source" value="Social Media"> Social Media</label>
+            <label><input type="radio" name="source" value="Friend"> Friend</label>
+            <label><input type="radio" name="source" value="Search Engine"> Search Engine</label>
+            <label><input type="radio" name="source" value="Other"> Other</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell Us what you think!</legend>
+          <div class="form-group">
+            <textarea id="comments" name="comments" rows="5" columns="7" required></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Submit</legend>
+          <div class="form-group">
+            <label><input type="checkbox" name="robot" required> I am not a robot</label>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 HelenOlwafemi-Raimi | Student ID: 8777971</p>
+  </footer>
+</body>
+</html>
